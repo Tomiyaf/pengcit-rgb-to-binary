@@ -40,7 +40,3 @@ plt.imshow(binary, cmap='gray')
 plt.title('Binary Image')
 
 plt.show()
-
-# # print array 2
-# print('Array biner:')
-# print(binary01)

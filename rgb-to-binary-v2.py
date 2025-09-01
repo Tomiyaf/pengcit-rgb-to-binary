@@ -12,9 +12,13 @@ img = img.astype(float)
 B, G, R = img[:, :, 0], img[:, :, 1], img[:, :, 2]
 
 # Konversi manual ke grayscale
+# Rumus standar
+# Gray = 0.299⋅R + 0.587⋅G + 0.114⋅B
 gray = (0.299 * R + 0.587 * G + 0.114 * B).astype(np.uint8)
 
 # Konversi ke binary dengan threshold
+# 1 jika gray(x,y) >= 128 atau treshold
+# 0 jika gray(x,y) < 128 atau treshold
 threshold = 128
 binary = np.where(gray >= threshold, 255, 0).astype(np.uint8)
 binary01 = (binary / 255).astype(np.uint8)

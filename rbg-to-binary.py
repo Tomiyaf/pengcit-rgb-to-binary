@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # read picture
-img = cv2.imread('fitgirl-10px.png')
+img = cv2.imread('image.png')
 
 # convert to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
